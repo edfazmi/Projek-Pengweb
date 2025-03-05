@@ -1,105 +1,163 @@
-body {
-    font-family: '', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #271d58;
+/* Reset default */
+* {
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', sans-serif;
 }
 
-.faq-container {
-    max-width: 900px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(44, 46, 60, 0.772);
+/* Body */
+body {
+    background: linear-gradient(to right, #b2d8a2, #bae9b0);
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.faq-content {
-    flex: 3;
-    margin-right: 20px;
+/* FAQ Section */
+.faq-section {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
 }
 
+/* Judul FAQ */
+.faq-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:rgb(154, 197, 169);
+}
+
+/* Input Pencarian */
+.faq-search {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.faq-search:focus {
+    border-color: #9be08f;
+    outline: none;
+}
+
+/* FAQ Container */
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* FAQ Item */
 .faq-item {
-    margin-bottom: 10px;
+    background: linear-gradient(135deg, #aad1ad, #95c99b);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efek hover */
+.faq-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(180, 238, 165, 0.5);
+}
+
+/* FAQ Answer */
+.faq-answer {
+    display: none;
+    background: #e6f2ff;
+    color: #333;
+    padding: 15px;
+    margin-top: 5px;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 16px;
+    transition: max-height 0.3s ease-in-out;
+}
+
+/* Tampilkan jawaban saat aktif */
+.faq-answer.active {
+    display: block;
+}
+
+/* Email Container */
+.email-container {
+    margin-top: 20px;
+}
+
+.email-container a {
+    color: #bdecad;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.email-container a:hover {
+    text-decoration: underline;
 }
 
 .faq-answer {
     display: none;
-    background: white;
     padding: 10px;
-    border-left: 5px solid #2c5045;
-    margin-bottom: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background: #e6f2ff;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
 }
 
 .faq-answer.active {
     display: block;
 }
 
-p {
-    background-color: #ccec90;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
+/* Tampilkan hanya 3 pertanyaan utama */
+.faq-item {
+    display: none;
 }
 
-.search-container {
-    text-align: right;
-    flex: 1;
-    margin-top: 95px;
+.faq-item.visible {
+    display: block;
 }
 
-.search-container input {
-    width: 250px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* Sembunyikan pertanyaan tambahan sampai dicari */
+.faq-item.hidden {
+    display: none;
 }
 
-.button-container {
+.no-result {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
 }
 
-.button-container a {
-    text-decoration: none;
+.no-result.hidden {
+    display: none;
 }
 
-.button-container button {
-    padding: 10px 20px;
-    font-size: 12px;
-    background-color: #2c3e50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.button-container button:hover {
-    background-color: #5a87b0;
-}
-
-.email-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.email-container a {
+.email-button {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #f5a38f;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #c2d1b4;
     color: white;
     text-decoration: none;
     border-radius: 5px;
 }
 
-.email-container a:hover {
-    background-color: #c0392b;
+.email-button:hover {
+    background-color: #b5d5b5;
 }
