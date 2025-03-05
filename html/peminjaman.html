@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../img/LOGO-TKJ-SMK-Swadhipa-2.png">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../css/peminjaman.css">
+    <title>SMK Swadhipa 2 Natar</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-atas">
+            <img src="../img/LOGO-TKJ-SMK-Swadhipa-2.png" alt="logo" width="150px" height="auto">
+        </div>
+        <div class="login">
+            <a href="login.html"><strong>Login</strong></a>
+        </div>
+        <div class="pencarian">
+            <input class="bar-pencarian" type="text" placeholder="Cari">
+            <button class="tombol-pencarian">
+                <span>&#128270;</span>
+            </button>
+        </div>
+    </header>
+
+    <nav></nav>
+
+    <main>
+        <section id="sidebar" class="sidebar-section">
+            <button class="open" onclick="toggleSidebar()"><span>&#9776;</span> Menu</button>
+            <div class="sidebar">
+                <a href="#" onclick="toggleSidebar()"><span>&#10006;</span> Close</a>
+                <a href="index.html">Beranda</a>
+                <a href="peminjaman.html">Form Peminjaman</a>
+                <a href="pengembalian.html">Kelola Pengembalian</a>
+                <a href="FAQ.html">FAQ</a>
+            </div>
+        </section>
+
+        <div class="container">
+            <h2>Form Peminjaman Barang</h2>
+            <label for="nama">Nama Peminjam</label>
+            <input type="text" id="nama" name="nama" placehodler="Masukkan nama lengkap" required>
+
+            <label for="barang">Nama Barang</label>
+            <select id="barang" name="barang" required>
+                <option value="">Pilih Barang</option>
+                <option value="Barang 1">Barang 1</option>
+                <option value="Barang 2">Barang 2</option>
+                <option value="Barang 3">Barang 3</option>
+            </select>
+
+            <label for="jumlah">Jumlah</label>
+            <input type="number" id="jumlah" name="jumlah" min="1" placeholder="Masukkan jumlah barang" required>
+
+            <label for="tanggal">Tanggal Peminjaman</label>
+            <input type="date" id="tanggal" name="tanggal" required>
+
+            <label for="keterangan">Keterangan</label>
+            <textarea id="keterangan" name="keterangan" rows="4" placeholder="Masukkan keterangan tambahan"></textarea>
+
+            <button type="submit">Ajukan Peminjaman</button>
+        </form>
+    </div>
+
+        <a href="index.html">
+            <button style="padding: 10px 20px; font-size: 14px; background-color: #2c3e50; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                Kembali ke Beranda
+            </button>
+        </a>    
+    </main>
+
+    <footer>
+
+        <div>
+            <p>&copy; 2025 SMK Swadhipa 2 Natar. Semua Hak Cipta Dilindungi.</p>
+            <p>
+                <a href="kebijakanpriv.html">Kebijakan Privasi</a> | 
+                <a href="syaratketentuan.html">Syarat dan Ketentuan</a>
+            </p>
+        </div>
+
+        <div class="hubungikami">
+            <h3>Hubungi Kami</h3>
+        </div>
+
+        <div class="mediasosial">
+            <h3>Ikuti Kami</h3>
+            <a href="https://web.facebook.com/smkswadhipa2/">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt="Facebook" width="20px">
+                Facebook
+            </a> |
+            
+            <a href="https://www.instagram.com/smkswadhipa2/">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="20px">
+                Instagram
+            </a> |
+            
+            <a href="https://x.com/smkswadhipa2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X" width="20px">
+                Twitter
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

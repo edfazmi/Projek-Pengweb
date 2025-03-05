@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    background-color: white;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    height: auto;
+}
+
+header{
+    display: flex;
+    background-color: #81d265;
+    align-items: center;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #79a618;
+    padding: 15px 20px;
+    color: white;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo-atas{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo-atas img{
+    width: 100px;
+    height: auto;
+    margin: 10px;
+}
+
+.pencarian{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.pencarian .bar-pencarian{
+    width: 100%;
+    max-width: 400px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+}
+
+.pencarian .tombol-pencarian{
+    color: black;
+    background-color: white;
+    border: 1px solid rgb(188, 186, 186);
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar-pencarian::placeholder{
+    font-weight: bold;
+    color: black;
+}
+
+.login{
+    position: absolute;
+    margin-top: 10px;
+    top: 45px;
+    right: 20px;
+}
+
+.login a{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #2c3e2c;
+    transition: 0.3s;
+}
+
+.login a:hover{
+    background-color: #379219;
+}
+
+/* .main-text {
+    text-align: center;
+    margin: 50px auto;
+    padding: 30px;
+    max-width: 800px;
+    background: #79a618;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.main-text:hover {
+    transform: scale(1.05);
+}
+
+.main-text h1 {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.main-text p {
+    font-size: 1.5rem;
+    color: #eee;
+    font-weight: 400;
+    line-height: 1.8;
+    font-style: italic;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+} */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .main-text {
+        padding: 20px;
+    }
+
+    .main-text h1 {
+        font-size: 2rem;
+    }
+
+    .main-text p {
+        font-size: 1.2rem;
+    }
+}
+
+.barang-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    text-align: center;
+    padding-bottom: 30vh;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 100px;
+}
+
+.card {
+    height: auto ;
+    background-color: #ffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 80px;
+    width: 260px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+    max-width: 100%; 
+    border-radius: 5px;
+}
+
+.card h3{
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.card button {
+    background-color: #379219;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+ .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #79a618;
+    padding: 1px 20px;
+    color: white;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+} */
+
+.logo-atas img {
+    height: 50px;
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .pencarian {
+        display: none;
+    }
+
+    .login {
+        display: none;
+    }
+}

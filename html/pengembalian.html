@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="../img/LOGO-TKJ-SMK-Swadhipa-2.png">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="pengembalian.css"> 
+    <title>SMK Swadhipa 2 Natar</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-atas">
+            <img src="../img/LOGO-TKJ-SMK-Swadhipa-2.png" alt="logo" width="150px" height="auto">
+        </div>
+        <div class="login">
+            <a href="login.html"><strong>Login</strong></a>
+        </div>
+        <div class="pencarian">
+            <input class="bar-pencarian" type="text" placeholder="Cari">
+            <button class="tombol-pencarian">
+                <span>&#128270;</span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section id="sidebar" class="sidebar-section">
+            <button class="open" onclick="toggleSidebar()"><span>&#9776;</span>Menu</button>
+            <div class="sidebar">
+                <a href="#" onclick="toggleSidebar()"><Span>&#10006;</Span>Close</a>
+            <a href="index.html">Beranda</a>
+            <a href="peminjaman.html">Form Peminjaman</a>
+            <a href="pengembalian.html">Kelola Pengembalian</a>
+            <a href="FAQ.html">FAQ</a>
+            </div>
+        </section>
+        <body>
+            <div class="container mt-4">
+         
+                <h2 class="judul">Kelola Pengembalian</h2>
+                <button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#tambahPengembalianModal">+ Tambah Pengembalian</button>
+
+                <table id="pengembalianTable" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Nama Barang</th>
+                            <th>Tanggal Kembali</th>
+                            <th>Jumlah</th>
+                            <th>Keterangan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Bola Volly</td>
+                            <td>00-00-0000</td>
+                            <td>3</td>
+                            <td class="terlambat">Terlambat</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Bola Basket</td>
+                            <td>00-00-0000</td>
+                            <td>1</td>
+                            <td class="terlambat">Terlambat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Bola Basket</td>
+                            <td>00-00-0000</td>
+                            <td>2</td>
+                            <td class="tidak-terlambat">Tidak Terlambat</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Matras</td>
+                            <td>00-00-0000</td>
+                            <td>1</td>
+                            <td class="tidak-terlambat">Tidak Terlambat</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </main>
+
+    <footer>
+        </div>
+        <div>
+            <p>&copy; 2025 SMK Swadhipa 2 Natar. Semua Hak Cipta Dilindungi.</p>
+            <p><a href="kebijakanpriv.html">Kebijakan Privasi</a> | <a href="syaratketentuan.html">Syarat dan Ketentuan</a>
+        <div class ="hubungikami">
+            <h3>Hubungi Kami</h3>
+        </div>
+
+        <div class ="mediasosial">
+            <h3>Ikuti Kami</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/800px-Facebook_logo_%28square%29.png" alt="Facebook" width="20px" height="20px">
+            <a href="https://web.facebook.com/smkswadhipa2/?locale=id_ID&_rdc=1&_rdr">Facebook</a> |
+            
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF58H8w3pm_H5mgkihLstCFTyhzd3DOzE4pA&s" alt="Instagram" width="20px" height="20px">
+            <a href="https://www.instagram.com/smkswadhipa2/">Instagram</a> |
+                        
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/X_logo_2023.svg" alt="X" width="20px" height="20px">
+            <a href="https://x.com/smkswadhipa2">Twitter</a>
+                    
+        </div>
+</footer>
+</body>
+</html>
